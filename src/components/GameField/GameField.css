@@ -10,22 +10,28 @@
 .brick.full {
     background: #000;
 }
+.game{
+  position: relative;
+  background: #003684;
+  width: 244px;
+  padding: 10px;
+  margin: 0 auto;
+}
 .game-field{
     position: relative;
-    background: midnightblue;
+    background: #00182B;
     display: flex;
     flex-wrap: wrap;
-    width: 200px;
-    height: 400px;
-    border: 1px solid #000;
+    width: 224px;
+    height: 444px;
+    border: 1px solid #0B79E8;
     padding: 1px;
-    margin: 0 auto;
 }
 .cell{
     position: relative;
-    width: 16px;
-    height: 16px;
+    width: 20px;
+    height: 20px;
     border-radius: 3px;
-    border: 1px solid #000;
+    border: 1px solid #0B79E8;
     margin: 1px;
 }
