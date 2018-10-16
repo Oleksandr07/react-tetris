@@ -1,0 +1,31 @@
+.brick {
+    float: left;
+    width: 1.25rem;
+    height: 1.25rem;
+    border: 1px solid #999;
+    border-radius: 3px;
+    box-sizing: border-box;
+    margin: 0.125rem;
+}
+.brick.full {
+    background: #000;
+}
+.game-field{
+    position: relative;
+    background: midnightblue;
+    display: flex;
+    flex-wrap: wrap;
+    width: 200px;
+    height: 400px;
+    border: 1px solid #000;
+    padding: 1px;
+    margin: 0 auto;
+}
+.cell{
+    position: relative;
+    width: 16px;
+    height: 16px;
+    border-radius: 3px;
+    border: 1px solid #000;
+    margin: 1px;
+}

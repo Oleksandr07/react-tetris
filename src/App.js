@@ -1,0 +1,16 @@
+import React, { Component } from 'react';
+import './App.css';
+
+import GameField from './containers/GameContainer';
+
+class App extends Component {
+  render() {
+    return (
+      <div className="App">
+        <GameField />
+      </div>
+    );
+  }
+}
+
+export default App;
