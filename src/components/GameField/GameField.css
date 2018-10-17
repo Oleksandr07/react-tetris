@@ -35,3 +35,8 @@
     border: 1px solid #0B79E8;
     margin: 1px;
 }
+.cell.full{
+    background: #ccc;
+    border-width: 4px;
+    border-style: outset;
+}
