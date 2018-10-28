@@ -8,12 +8,14 @@ Cell.propTypes = {
     full: PropTypes.bool.isRequired
 };
 
-const GameField = ({wall = []}) => {
+const GameField = ({wall = [], children}) => {
+
     return (
         <div className="game">
             <div className="game-field">
                 {wall.map((row, y) => row.map((col, x) => <Cell key={`${x}.${y}`} full={!!col} />))}
             </div>
+            {children && <div className="game-action">{children}</div>}
         </div>
     );
 }
