@@ -1,14 +1,14 @@
 import React from 'react';
 import './PlayerLoginForm.css';
-import GameField from "../GameField/GameField";
 
-const PlayerLoginForm = ({value, onChange}) => {
+const PlayerLoginForm = ({value, onChange, onStartGame}) => {
     return(
         <form
-            className="payer-name-form"
+            className="payer-login-form"
             onSubmit = {
                 (e) => {
                     e.preventDefault();
+                    onStartGame();
                 }
             }
         >

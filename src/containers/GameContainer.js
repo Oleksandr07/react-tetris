@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import GameField from '../components/GameField/GameField';
 import PlayerLoginForm from '../components/PlayerLoginForm/PlayerLoginForm';
+import PauseMenu from '../components/Menu/PauseMenu';
 
 const wall = [
     [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
@@ -36,7 +37,6 @@ class GameContainer extends Component{
     }
 
     playerNameChange = ({target: {value}}) => {
-        console.log(value)
         this.setState({
             name: value,
         });
@@ -58,7 +58,9 @@ class GameContainer extends Component{
                 console.log('Down')
                 break;
             case 'Escape':
-                console.log('Escape')
+                this.setState({
+
+                })
                 break;
             default:
                 break;
@@ -82,8 +84,14 @@ class GameContainer extends Component{
                     <PlayerLoginForm
                         value = {name}
                         onChange = {this.playerNameChange}
+                        onStartGame={() => {
+                            this.setState({
+                                started: true
+                            });
+                        }}
                     />
                 )}
+                {paused && started && <PauseMenu onResume={() => {}} />}
             </GameField>
         )
     }

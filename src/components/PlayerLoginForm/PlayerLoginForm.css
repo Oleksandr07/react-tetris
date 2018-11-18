@@ -5,7 +5,7 @@
     right: 10px;
     bottom: 10px;
 }
-    .payer-name-form{
+    .payer-login-form{
         position: absolute;
         top: 50%;
         left: 0;
@@ -13,14 +13,14 @@
         text-align: center;
         transform: translateY(-50%);
     }
-.payer-name-form label{
+.payer-login-form label{
     position: relative;
     display: block;
     color: #fff;
     font-size: 18px;
     margin-bottom: 5px;
 }
-.payer-name-form input{
+.payer-login-form input{
     display: block;
     width: 100%;
     height: 30px;
