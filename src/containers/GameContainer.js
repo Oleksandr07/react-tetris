@@ -59,7 +59,7 @@ class GameContainer extends Component{
                 break;
             case 'Escape':
                 this.setState({
-
+                    paused: name ? !paused : false
                 })
                 break;
             default:

@@ -1,9 +1,9 @@
 import React from 'react';
 import './Menu.css';
 
-export const Link = ({children, disabled, ...props}) => {
+export const Link = ({children, ...props}) => {
   return (
-    <a className={`link ${disabled && 'disabled'}`} {...props}>
+    <a className="btn" {...props}>
       {children}
     </a>
   )
@@ -12,7 +12,7 @@ export const Link = ({children, disabled, ...props}) => {
 
 export const Button = ({children, ...props}) => {
   return (
-    <button className="link" {...props}>
+    <button className="btn" {...props}>
       {children}
     </button>
   )
@@ -22,11 +22,9 @@ const Menu = ({title, children}) => {
   return(
     <nav className="menu">
       {title}
-      <ul>
-        {children.map((child, i) => (
-          <li key={i}>{child}</li>
-        ))}
-      </ul>
+      {children.map((child, i) => (
+        <p key={i}>{child}</p>
+      ))}
     </nav>
   )
 }

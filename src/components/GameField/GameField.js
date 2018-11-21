@@ -9,7 +9,6 @@ Cell.propTypes = {
 };
 
 const GameField = ({wall = [], children}) => {
-
     return (
         <div className="game">
             <div className="game-field">

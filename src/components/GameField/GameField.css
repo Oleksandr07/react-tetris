@@ -27,6 +27,19 @@
     border: 1px solid #0B79E8;
     padding: 1px;
 }
+.game-field.disabled{
+    filter: blur(3px);
+}
+.game-field.disabled:before{
+    content: '';
+    position: absolute;
+    background: #fff;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    opacity: 0.3;
+}
 .cell{
     position: relative;
     width: 20px;

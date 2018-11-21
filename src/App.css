@@ -30,3 +30,10 @@
     transform: rotate(360deg);
   }
 }
+
+p{
+  margin: 0;
+}
+p:not(:last-child){
+  margin-bottom: 10px;
+}
