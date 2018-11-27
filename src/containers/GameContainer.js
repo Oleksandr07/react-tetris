@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import GameField from '../components/GameField/GameField';
 import PlayerLoginForm from '../components/PlayerLoginForm/PlayerLoginForm';
 import PauseMenu from '../components/Menu/PauseMenu';
+import FinishMenu from '../components/Menu/FinishMenu';
 
 const wall = [
     [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],

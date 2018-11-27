@@ -13,7 +13,7 @@ const PlayerLoginForm = ({value, onChange, onStartGame}) => {
             }
         >
             <label htmlFor="player-name">Введіть ім’я</label>
-            <input id="player-name" type="text" value={value} onChange={onChange} required />
+            <input id="player-name" type="text" value={value} placeholder="Введіть ім’я" onChange={onChange} required />
             <button className="btn">Грати</button>
         </form>
     )

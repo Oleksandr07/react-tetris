@@ -1,0 +1,14 @@
+.game-list ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.game-list ul li {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+.game-list ul li:not(:last-child){
+	border-bottom: 1px solid #003684;
+}
